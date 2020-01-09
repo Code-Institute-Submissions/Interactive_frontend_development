@@ -8,6 +8,7 @@ function makeGraphs(error, salaryData) {
     discoveryYear(ndx);
     discoveryMethod(ndx);
     show_planetSelecor(ndx);
+    show_listPlanetIsOn(ndx);
    
    
     
@@ -29,7 +30,7 @@ function discoveryYear(ndx) {
         .transitionDuration(500)
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
-        .elasticY(false)
+        .elasticY(true)
         .xAxisLabel("DiscoveryYear")
         .yAxis().ticks(20);
 }
@@ -54,6 +55,17 @@ function show_planetSelecor(ndx) {
     group = dim.group()
 
     dc.selectMenu("#planetSelector")
+        .dimension(dim)
+        .group(group);
+
+
+}
+
+function show_listPlanetIsOn(ndx) {
+    dim = ndx.dimension(dc.pluck('ListsPlanetIsOn'));
+    group = dim.group()
+
+    dc.selectMenu("#listSelector")
         .dimension(dim)
         .group(group);
 
