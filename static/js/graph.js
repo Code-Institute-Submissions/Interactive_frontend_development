@@ -1,30 +1,31 @@
 queue()
     .defer(d3.csv, "data/oec.csv")
     .await(makeGraphs);
-    
-function makeGraphs(error, salaryData) {
-    var ndx = crossfilter(salaryData);
-    
+
+function makeGraphs(error, planetData) {
+    var ndx = crossfilter(planetData);
+
     discoveryYear(ndx);
     discoveryMethod(ndx);
     show_planetSelecor(ndx);
     show_listPlanetIsOn(ndx);
-   
-   
-    
-    dc.renderAll(); 
-         
-    
+    countChart(ndx);
+ 
+
+
+    dc.renderAll();
+
+
 }
 
 function discoveryYear(ndx) {
     var dim = ndx.dimension(dc.pluck('DiscoveryYear'));
     var group = dim.group();
-    
+
     dc.barChart("#discoveryYear")
         .width(1000)
         .height(300)
-        .margins({top: 10, right: 50, bottom: 30, left: 50})
+        .margins({ top: 10, right: 50, bottom: 30, left: 50 })
         .dimension(dim)
         .group(group)
         .transitionDuration(500)
@@ -39,15 +40,15 @@ function discoveryYear(ndx) {
 function discoveryMethod(ndx) {
     var dim = ndx.dimension(dc.pluck('DiscoveryMethod'));
     var group = dim.group();
-    
+
     dc.pieChart("#discoveryMethod")
-    .width(500)
-    .radius (150)
-    .transitionDuration(500)
-    .dimension(dim)
-    .group(group)
-    .legend(dc.legend())
-    
+        .width(500)
+        .radius(150)
+        .transitionDuration(500)
+        .dimension(dim)
+        .group(group)
+        .legend(dc.legend())
+
 };
 
 function show_planetSelecor(ndx) {
@@ -72,5 +73,10 @@ function show_listPlanetIsOn(ndx) {
 
 }
 
+function countChart(ndx) {
 
+    dc.dataCount("#mystats")
+        .dimension(ndx)
+        .group(ndx.groupAll());
+}
 
