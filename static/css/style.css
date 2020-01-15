@@ -1,0 +1,52 @@
+body{
+    background: black;
+    color:whitesmoke;
+    overflow-x: hidden;
+    margin: 0px;
+    height: 100%;
+    width:100%
+    
+}
+
+.standard {
+    background: black;
+    color:whitesmoke;
+}
+.center{
+    text-align: center;
+}
+
+#hero-image{
+    height:600px;
+    width: 100%;
+    background: url("/static/css/photo/starynight.jpg") no-repeat center center;
+    
+    animation: hero-zoom;
+    animation-duration: 5.5s;
+    animation-fill-mode: forwards;
+}
+
+#hero-outer{
+    height:600px;
+    width: 100%;
+    overflow:hidden;
+}
+.dc-chart{
+text-decoration: none;
+color:whitesmoke;
+
+}
+
+@keyframes hero-zoom{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform:scale(1.1);
+    }
+    }
+
+table{
+    filter: invert(1);
+}
+
