@@ -47,6 +47,36 @@ color:whitesmoke;
     }
 
 table{
-    filter: invert(1);
+    
+    float:none;
+}
+
+div.container {
+    width:98%; 
+    margin:1%;
+  }
+  table#table1 {
+    text-align:center; 
+    margin-left:auto; 
+    margin-right:auto; 
+    margin-bottom: 10px;
+    width:80%;
+  }
+  tr,td {text-align:center;}
+
+  div.dc-chart {
+    float: none !important;
+    margin-bottom: 10px !important;
+    fill: whitesmoke !important;
+    background-color: black !important;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    background-color: black;
 }
 

@@ -9,11 +9,13 @@
 
 	<link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" />
 	<link rel="stylesheet" href="static/css/dc.min.css" type="text/css" />
+
 	<script type="text/javascript" src="static/js/d3.min.js"></script>
 	<script type="text/javascript" src="static/js/crossfilter.min.js"></script>
 	<script type="text/javascript" src="static/js/dc.min.js"></script>
 	<script type="text/javascript" src="static/js/queue.min.js"></script>
-	<link rel="stylesheet" href="static/css/style.css" type="text/css" />
+
+
 
 
 </head>
@@ -74,62 +76,48 @@
 
 		<br>
 
-		<br>
-		<p>
-		</p>
 	</div>
 
-		<table style="width:100%">
-
-        <table >
+		 <div class="container">
+    <table id="table1">
         <tr class="center">
             <td><h1>Use the drop downs to filter the planets </h1></td>
         </tr>
 
-        <tr>
-            <td><<div id="listSelector"></div></td>
+        <tr class="center">
             <td><div id="planetSelector"></div></td>
+        </tr>   
+        <br>
+        <tr class="center">   
+            <td><div id="listSelector"></div></td>
         </tr>
-        
-        </table>
-
-			
-				<td>
+       
+        <tr class="center">
+            <td><div id="discoveryYear"></div></td>
+        </tr>
+        <td>
 					<div id="mystats" class="dc-data-count" style="float: center">
 						<span class = "filter-count"></span> selected out of <span
                   class = "total-count"></span> | <a href="javascript:dc.filterAll();
                   dc.renderAll();">Reset All</a>
 					</div>
 				</td>
-			</tr>
-
-			<tr>
-				<td>
-					
-				</td>
-				<td>
-					
-				</td>
-
-			</tr>
-
-			<tr>
-				<td>
-					<div id="discoveryYear"></div>
-				</td>
-				<td>
+        <tr>
+        <td>
 					<div id="discoveryMethod"></div>
 				</td>
+                </tr>
+                
+                
+        </table>
+		 
 
-			</tr>
-
-
-		</table>
-
+         
 
 
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<script type="text/javascript" src="static/js/graph.js"></script>
+        	<link rel="stylesheet" href="static/css/style.css" type="text/css" />
 </body>
 
 </html>
