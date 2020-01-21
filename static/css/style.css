@@ -62,7 +62,7 @@ div.container {
     margin-bottom: 10px;
     width:80%;
   }
-  tr,td {text-align:center;}
+ 
 
   div.dc-chart {
     float: none !important;
@@ -78,5 +78,17 @@ a {
     text-decoration-style: initial;
     text-decoration-color: initial;
     background-color: black;
+}
+
+
+
+td:nth-child(even) {
+  width:70%;
+  text-align: center; 
+}
+
+img{
+    width: 100%;
+   
 }
 
