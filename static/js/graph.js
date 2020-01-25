@@ -32,8 +32,11 @@ function discoveryYear(ndx) {
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
         .elasticY(true)
-        .xAxisLabel("DiscoveryYear")
-        .yAxis().ticks(20);
+        .elasticX(true)
+        .xAxisLabel("Discovery Year")
+        .yAxisLabel("Number of Records");
+        
+        
 }
 
 
@@ -79,4 +82,3 @@ function countChart(ndx) {
         .dimension(ndx)
         .group(ndx.groupAll());
 }
-
