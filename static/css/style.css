@@ -21,17 +21,14 @@ body{
     color:whitesmoke;
 
 }
-
+#mystats{
+    float: center
+}
 #mystats>a:hover{
     color: #eaeef17a;
     transition: color 0.5s;
     text-decoration: none;
 }
-
-
-
-
-
 
 .standard {
     background: black;
@@ -44,8 +41,7 @@ body{
 #hero-image{
     height:600px;
     width: 100%;
-    background: url("/static/css/photo/starynight.jpg") no-repeat center center;
-    
+    background: url("/static/css/photo/starynight.jpg") no-repeat center center;    
     animation: hero-zoom;
     animation-duration: 5.5s;
     animation-fill-mode: forwards;
@@ -70,18 +66,18 @@ body{
     }
     }
 
-table{
-    
+table{    
     float:none;
 }
 
 
   table#table1 {
     text-align:center; 
-    margin-left:auto; 
-    margin-right:auto; 
+    margin-left:5%; 
+    margin-right:5%; 
     margin-bottom: 10px;
-    width:80%;
+    width:100%;
+    
   }
  
 
@@ -113,3 +109,34 @@ img{
    
 }
 
+#footer {
+    background-color: #141313;
+    height:100px;
+}
+
+#footer>a {
+   background-color: #141313;
+   font-size: 30px;
+   text-decoration: none;
+   text-align: left;
+}
+
+#footer>a:nth-child(even){
+    text-align: right;
+}
+
+#footer>a:hover{
+    color: #eaeef17a;
+    transition: color 0.5s;
+    text-decoration: none
+}
+
+@media (max-width:900px){
+    #discoveryYear{
+        visibility: hidden;
+    }
+    #div.dc-chart{
+        float: left !important;
+        margin:0;
+    }
+}

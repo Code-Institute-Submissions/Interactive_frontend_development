@@ -32,7 +32,6 @@ function discoveryYear(ndx) {
         .x(d3.scale.ordinal())
         .xUnits(dc.units.ordinal)
         .elasticY(true)
-        .elasticX(true)
         .xAxisLabel("Discovery Year")
         .yAxisLabel("Number of Records");
         
