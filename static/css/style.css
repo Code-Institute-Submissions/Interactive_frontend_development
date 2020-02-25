@@ -71,14 +71,14 @@ table{
 }
 
 
-  table#table1 {
+ /* table#table1 {
     text-align:center; 
     margin-left:5%; 
     margin-right:5%; 
     margin-bottom: 10px;
     width:100%;
     
-  }
+  }*/ 
  
 
   div.dc-chart {
