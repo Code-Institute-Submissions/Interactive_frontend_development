@@ -7,12 +7,14 @@ body{
     background: black;
     color:whitesmoke;
     overflow-x: hidden;
-    margin: 0px;
+    margin: 5px;
     height: 100%;
     width: 100%;
     
 }
-
+.container{
+     overflow-x: hidden;
+}
 .row{
     margin:0;
 }
@@ -71,15 +73,6 @@ table{
 }
 
 
- /* table#table1 {
-    text-align:center; 
-    margin-left:5%; 
-    margin-right:5%; 
-    margin-bottom: 10px;
-    width:100%;
-    
-  }*/ 
- 
 
   div.dc-chart {
     float: none !important;
@@ -114,19 +107,17 @@ img{
     height:100px;
 }
 
-#footer>a {
+.col>a {
+   
    background-color: #141313;
    font-size: 30px;
    text-decoration: none;
    text-align: left;
 }
 
-#footer>a:nth-child(even){
-    text-align: right;
-}
 
-#footer>a:hover{
-    color: #eaeef17a;
+.col>a:hover{
+    color: #525151;
     transition: color 0.5s;
     text-decoration: none
 }
