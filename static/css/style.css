@@ -102,24 +102,6 @@ img{
    
 }
 
-#footer {
-    background-color: #141313;
-    height:100px;
-
-}
-
-.col {
-   
-   background-color: #141313;
-   font-size: 30px;
-   text-decoration: none;
-   text-align: left;
-   margin-top: 10px;
-   margin-bottom: 10px;
-}
-
-
-
 @media (max-width:900px){
     #discoveryYear{
         visibility: hidden;
