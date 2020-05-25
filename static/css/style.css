@@ -43,7 +43,7 @@ body{
 #hero-image{
     height:600px;
     width: 100%;
-    background: url("static/css/photo/starynight.jpg") no-repeat center center;    
+    background: url("../img/starynight.jpg") no-repeat center center;    
     animation: hero-zoom;
     animation-duration: 5.5s;
     animation-fill-mode: forwards;
@@ -105,22 +105,20 @@ img{
 #footer {
     background-color: #141313;
     height:100px;
+
 }
 
-.col>a {
+.col {
    
    background-color: #141313;
    font-size: 30px;
    text-decoration: none;
    text-align: left;
+   margin-top: 10px;
+   margin-bottom: 10px;
 }
 
 
-.col>a:hover{
-    color: #525151;
-    transition: color 0.5s;
-    text-decoration: none
-}
 
 @media (max-width:900px){
     #discoveryYear{

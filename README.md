@@ -92,7 +92,7 @@ after a smaller screensize but the axis markings and labels became unreadable so
 <h1>Deployment</h1>
 <br>
 <p>
- 
+ For my Deployment I have chosen gitgub pages. I logged into my github accoun, selected the Interactive_frontend _development repository, selected settings, scrolled down to the GitHub Pages section and changed the source to "Master Branch". My full project is available <a href="https://robertpokane.github.io/Interactive_frontend_development/" target = "_blank">Here</a> to view.
 </p>
 <h1>Credits</h1>
 <br>
